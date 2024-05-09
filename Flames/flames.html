@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flames</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="flames.js"></script>
+    <style>
+      body {
+        background-color: #fff0f6;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        height: 100vh;
+      }
+    </style>
+    <script src="flames.js"></script>
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center"
+    >
+      <div id="inner-box " style="width: 700px;">
+        <div
+          style="border-color: #ff647f !important"
+          class="border border-dark p-5 pb-4 border-3 text-center shadow-lg"
+        >
+          <form action="">
+            <label
+              style="color: #ff85c0 !important"
+              class="pb-4 h3 fw-bold mb-0"
+              >Love Calculator</label
+            >
+            <div class="row">
+              <input
+                type="text"
+                id="name1"
+                placeholder="Your name"
+                class="mb-3 form-control"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="row">
+              <input
+                type="text"
+                id="name2"
+                placeholder="Partner's name"
+                class="form-control"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="row d-flex justify-content-center">
+              <button
+                style="width: 100px"
+                class="btn btn-primary mt-4"
+                onclick="handleSubmit(event)"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div
+        style="width: 500px;"
+        class="mt-5 d-flex flex-wrap justify-content-center"
+      >
+        <div
+          style="color: #ff85c0 !important;"
+          class="h4 fw-bold"
+          id="output"
+        >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
